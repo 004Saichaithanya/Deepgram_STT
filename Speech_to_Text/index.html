@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎙️ Live Voice to Text</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f9f9f9, #e0eafc);
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      margin: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    #stopBtn {
+      background: #f44336;
+    }
+    #stopBtn:hover {
+      background: #e53935;
+    }
+    textarea {
+      width: 90%;
+      max-width: 800px;
+      height: 320px;
+      margin-top: 25px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      line-height: 1.5;
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎙️ Speak, and See the Magic!</h1>
+  <button id="startBtn">▶️ Start Listening</button>
+  <button id="stopBtn">⏹️ Stop Listening</button>
+  <br>
+  <textarea id="output" placeholder="Your transcribed words will appear here..."></textarea>
+
+  <script src="app.js"></script>
+</body>
+</html>
